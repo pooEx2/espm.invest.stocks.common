@@ -8,8 +8,6 @@ public class Stocks {
     private String id;
     private String symbol;
     private String name;
-    private Date date;
-    private BigDecimal value;
 
     public String getId() {
         return id;
@@ -33,21 +31,5 @@ public class Stocks {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
-
-    public BigDecimal getValue() {
-        return value;
-    }
-
-    public void setValue(BigDecimal value) {
-        this.value = value;
     }
 }
