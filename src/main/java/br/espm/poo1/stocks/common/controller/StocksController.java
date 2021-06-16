@@ -17,25 +17,25 @@ public interface StocksController {
     List<Price> prices();
 
     @GetMapping("/price/{id}")
-    Price price(String id);
+    Price price(@PathVariable String id);
+
+    @GetMapping("/price/{idStocks}/{date}")
+    Price price(
+            @PathVariable String idStocks,
+            @PathVariable String date
+    );
 
     @GetMapping("/stocks")
     List<Stocks> stocks();
 
-    @GetMapping("/stocks/{id}")
-    Stocks stocks(String id);
+    @GetMapping("/stocks/{symbol}")
+    Stocks stocks(@PathVariable String symbol);
 
     @GetMapping("/stocks/{id}/{symbol}/{name}")
     List<Stocks> stocks(
             @PathVariable String id,
             @PathVariable String symbol,
             @PathVariable String name
-    );
-
-    @GetMapping("/stocks/{symbol}/{date}")
-    Stocks stocks(
-            @PathVariable String symbol,
-            @PathVariable String date
     );
 
 

@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class Price {
     private String id;
-    private Stocks idStocks;
+    private Stocks stocks;
     private Date date;
     private BigDecimal value;
 
@@ -17,12 +17,12 @@ public class Price {
         this.id = id;
     }
 
-    public Stocks getIdStocks() {
-        return idStocks;
+    public Stocks getStocks() {
+        return stocks;
     }
 
-    public void setIdStocks(Stocks idStocks) {
-        this.idStocks = idStocks;
+    public void setStocks(Stocks stocks) {
+        this.stocks = stocks;
     }
 
     public Date getDate() {
